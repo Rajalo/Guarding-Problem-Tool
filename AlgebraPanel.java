@@ -22,7 +22,7 @@ public class AlgebraPanel extends JPanel{
         Font currentFont = g.getFont();
         Font newFont = currentFont.deriveFont(currentFont.getSize() * 1.4F);
         g.setFont(newFont);
-        g.drawString("w(P) > " + Main.gpanel.witnesses.size(),20,40);
+        g.drawString("w(P) >= " + Main.gpanel.witnesses.size(),20,40);
         if (Main.gpanel.addWitnessError)
         {
             g.drawString("Invalid witness added, make sure it doesn't overlap with the others",20, 70);
